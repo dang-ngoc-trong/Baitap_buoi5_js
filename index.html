@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BaitapBuoi5_js</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- baì tập 1 -->
+    <div class="d-flex justify-content-center">
+      <div class="border-danger card w-50">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Quản lý tuyển sinh
+        </div>
+        <div class="form-group row mt-2">
+          <div class="col-4">
+            <input
+              class="form-control"
+              id="diemChuan"
+              placeholder="Điểm chuẩn"
+            />
+          </div>
+          <div class="col-4">
+            <select class="form-control" name="" id="chonKhuVuc">
+              <option value="x">Chọn Khu Vực</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+
+            <!-- <input
+              class="form-control"
+              id="khuVuc"
+              placeholder="Chọn khu vực"
+            /> -->
+          </div>
+          <div class="col-4">
+            <select class="form-control" name="" id="chonDoiTuong">
+              <option value="0">Chọn Đối Tượng</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+
+            <!-- <input
+              class="form-control"
+              id="doiTuong"
+              placeholder="Chọn đối tượng"
+            /> -->
+          </div>
+          <div class="col-4 mt-2">
+            <input
+              class="form-control"
+              id="diemThu1"
+              placeholder="Điểm môn thứ 1"
+            />
+          </div>
+          <div class="col-4 mt-2">
+            <input
+              class="form-control"
+              id="diemThu2"
+              placeholder="Điểm môn thứ 2"
+            />
+          </div>
+          <div class="col-4 mt-2">
+            <input
+              class="form-control"
+              id="diemThu3"
+              placeholder="Điểm môn thứ 3"
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button id="btnKetQua" class="btn btn-danger mt-2">Kết Quả</button>
+          <div
+            class="text-center mt-2"
+            id="xuatKetQua"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- bài tập 2 -->
+    <div class="d-flex justify-content-center">
+      <div class="border-danger card w-50">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          TÍNH TIỀN ĐIỆN
+        </div>
+        <div class="form-group row mt-2">
+          <div class="col-4">
+            <input class="form-control" id="hoTen" placeholder="ho va ten" />
+          </div>
+          <div class="col-4">
+            <input class="form-control" id="soKW" placeholder="Nhập số KW" />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button id="btnTinhTien" class="btn btn-danger mt-2">
+            tinh tien dien
+          </button>
+          <div
+            class="text-center mt-2"
+            id="btnKetQua_2"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <br />
+    <!-- bài tập 3 -->
+    <div class="d-flex justify-content-center">
+      <div class="border-danger card w-50">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          TÍNH TIỀN THUẾ
+        </div>
+        <div class="form-group row mt-2">
+          <div class="col-4">
+            <input class="form-control" id="hoTen1" placeholder="ho va ten" />
+          </div>
+          <div class="col-4">
+            <input
+              class="form-control"
+              id="tongThuNhap"
+              placeholder="Tổng thu nhập năm"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              class="form-control"
+              id="soNguoiPT"
+              placeholder="Số người phụ thuộc"
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button id="btnTienThue" class="btn btn-danger mt-2">
+            Tính tiền thuế
+          </button>
+          <div
+            class="text-center mt-2"
+            id="KetQua_3"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <br />
+   <!-- bài tập 4 -->
+    <hr/>
+    <div class="d-flex justify-content-center">
+      <div class="border-danger card w-50">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          TÍNH TIỀN CÁP
+        </div>
+        <div class="form-group row mt-2">
+          <div class="col-4">
+            <select class="form-control" name="" id="chonKhachHang">
+              <option value="0">Chọn Loại khách hàng </option>
+              <option value="1.1">Nhà dân</option>
+              <option value="2.1">Doanh Nghiệp</option>
+              
+            </select>
+          </div>
+          <div class="col-4">
+            <input
+              class="form-control"
+              id="maKhachHang"
+              placeholder="Nhập mã khách hàng"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              class="form-control"
+              id="soKenhCaoCap"
+              placeholder="Số kênh cao cấp"
+            />
+          </div>
+          <div class="col-4 mt-2" >
+            <input
+              class="form-control"
+              id="soKetNoi"
+              placeholder="Số kết nối"
+              
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button id="btnTienCap" class="btn btn-danger mt-2">
+            Tính tiền cáp
+          </button>
+          <div
+            class="text-center mt-2"
+            id="KetQua_4"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+
+    </div>
+    <div>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
