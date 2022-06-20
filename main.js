@@ -70,12 +70,15 @@ document.getElementById("btnTinhTien").onclick = function () {
   document.getElementById("btnKetQua_2").innerHTML =
     hoTen + "Tổng :" + tong + " vnd";
 };
-// BÀI TẬP 3.4 CHUA XONG, HÔM SAU NỘP LẠI NHÉ MENTOR
+// BÀI TẬP 3.4 đã làm xong, chấm giúp
 // BÀI TẬP 3
 document.getElementById("btnTienThue").onclick = function () {
+  // input: hoTen : string
+  // input: tongThuNhap,soNguoiPT : number
   var hoTen = document.getElementById("hoTen1").value;
   var tongThuNhap = +document.getElementById("tongThuNhap").value;
   var soNguoiPT = +document.getElementById("soNguoiPT").value;
+  //output: thue: number
   var thue = "";
   if (tongThuNhap <= 60000000) {
     thueSuat = 0.05;
@@ -92,25 +95,30 @@ document.getElementById("btnTienThue").onclick = function () {
   } else {
     thueSuat = 0.35;
   }
+  //progress
   thue = (tongThuNhap - 4000000 - soNguoiPT * 1600000) * thueSuat;
+  //in output ra mang hình
   document.getElementById("KetQua_3").innerHTML =
     "Họ tên: " + hoTen + " Tiền thuế thu nhập cá nhân: " + thue + " vnd";
 };
 // bài tập 4
 document.getElementById("btnTienCap").onclick = function () {
+  // input: chonKhachHang,maKhachHang : string
+  // input: kenhCaoCap,soKetNoi : number
   var chonKhachHang = document.getElementById("chonKhachHang").value;
   var maKhachHang = document.getElementById("maKhachHang").value;
   var kenhCaoCap = +document.getElementById("soKenhCaoCap").value;
   var soKetNoi = +document.getElementById("soKetNoi").value;
   var tienCap = "";
-
+  //output: thue: number
   if (chonKhachHang === "1.1") {
     tienCap = 20.5 + 4.5 + kenhCaoCap * 7.5;
-  } else if (chonKhachHang === "2.1" || soKetNoi > 10) {
+  } else if (chonKhachHang === "2.1" && soKetNoi > 10) {
     tienCap = 15 + 75 + kenhCaoCap * 50 + (soKetNoi - 10) * 5;
   } else {
     tienCap = 15 + 75 + kenhCaoCap * 50;
   }
+  //in output ra mang hình
   document.getElementById("KetQua_4").innerHTML =
     "Mã Khách hàng: " + maKhachHang + ", tiền cáp: " + tienCap + " $";
 };
